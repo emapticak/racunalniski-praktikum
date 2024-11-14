@@ -26,7 +26,7 @@
 \newcommand{\pojem}[1]{\emph{\color{purple}#1}}
 
 \newenvironment{magic}[3]
-{   \begin{table} [!ht!]
+{   \begin{table} [!ht]
       \centering
       \caption{#2}
       \label{#3}
@@ -58,7 +58,7 @@
 % - v okolju `center' uporabite ukaz  `\includegraphics{slika.pdf}
 \begin{center}
    \includegraphics{slika.pdf}
-\end{center}`
+\end{center}
 
 Prirejeno iz virov:
 
@@ -177,7 +177,7 @@ primer Euler, glej \cite{euler}. % ključ: euler
 Najzgodnejši znani magični kvadrat reda 4 je bil odkrit na napisu
 v Khajurahu v Indiji in v Enciklopediji Bratovščine Čistosti iz enajstega
 ali dvanajstega stoletja. Vrh vsega gre celo za ">panmagični kvadrat"<.
-V Evropi sta morda najbolj znana naslednja magična kvadrata reda 4:
+V Evropi sta morda najbolj znana naslednja magična kvadrata reda 4.
 
 Magični kvadrat v litografiji Melancholia I (glej sliko \ref{fig:durer}
 za izsek s kvadratom) Albrechta Dürerja naj bi bil najzgodnejši magični kvadrat
@@ -225,7 +225,7 @@ Pasijonska fasada na katedrali Sagrada família v Barceloni
 \begin{figure}[!ht]
    \centering
    \caption{Pasijonska fasada, Sagrada Família}
-   \includegraphics{sagrada.png}
+   \includegraphics[scale=0.6]{sagrada.png}
    \label{fig:sagrada}
 \end{figure}
 
@@ -233,7 +233,6 @@ Vsota števil v vrsticah, stolpcih oziroma na diagonalah je 33 -- Jezusova staro
 v času pasijona. Strukturno je kvadrat podoben Dürerjevemu, vendar so števila
 v štirih poljih zmanjšana za 1. Posledica je, da sta števili 10 in 14 podvojeni
 in zato kvadrat ni normalen.
-%
 % - napis nad tabelo: Pasijonska fasada, Sagrada Família
 % - oznaka: table:sagrada
 \begin{magic}{4}{Pasijonska fasada, Sagrada Família}{table:sagrada}
@@ -243,7 +242,6 @@ in zato kvadrat ni normalen.
     13 &  2 &  3 & 15 \\\hline
 \end{magic}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Osnovne lastnosti}
 
 \begin{definicija}
@@ -279,16 +277,15 @@ $A$, $A+D$, $A+2D$, \dots, $A+(n^2-1)D$, enaka
 
 $$\mathcal{M}_2(n;A,D) = \frac{1}{2}n \left(2A + D(n^2-1)\right)$$
     
-Kvadratu v tabeli ?!? ustrezata konstanti $A=20$ in $D=1$.
-
+Kvadratu v tabeli \ref{table:kubera} ustrezata konstanti $A=20$ in $D=1$.
 \begin{definicija}
       Če vsako od števil v normalnem magičnem kvadratu reda $n$ odštejemo
       od števila $n^2+1$, dobimo nov magični kvadrat, ki je prvotnemu
       \pojem{komplementaren}.
 \end{definicija}
 
-Na primer, magičnemu kvadratu Lo Shu (glej tabelo ?!?) priredimo
-komplementarni kvadrat, prikazan v tabeli ?!?.
+Na primer, magičnemu kvadratu Lo Shu (glej tabelo \ref{table:loshu}) priredimo
+komplementarni kvadrat, prikazan v tabeli \ref{table:closhu}.
 
 % - napis nad tabelo: Kvadratu Lo Shu komplementarni kvadrat
 % - oznaka: ttable:closhu
@@ -298,12 +295,10 @@ komplementarni kvadrat, prikazan v tabeli ?!?.
    2 & 9 & 4 \\\hline
 \end{magic}
 
-
 Vidimo, da je dobljeni kvadrat moč dobiti iz kvadrata Lo Shu tudi z zasukom za
-180 stopinj okrog središča, kvadrat iz tabele ?!? pa je mogoče dobiti
+180 stopinj okrog središča, kvadrat iz tabele \ref{table:mag3} pa je mogoče dobiti
 iz kvadrata Lo Shu z zrcaljenjem preko sredinske vodoravne črte.
 
-Število različnih normalnih magičnih kvadratov
 
 \begin{definicija}
       Pravimo, da sta dva magična kvadrata \pojem{različna}, če enega ni mogoče dobiti
@@ -341,7 +336,7 @@ sta za oceno uporabila simulacijo Monte Carlo in metode statistične mehanike.
 
 \section{Primeri}
 
-V tabelah ?!?, ?!? in ?!? so prikazani
+V tabelah \ref{table:mag5}, \ref{table:mag6} in \ref{table:mag9} so prikazani
 magični kvadrati redov 5, 6 in 9.
 
 % - napis nad tabelo: Magični kvadrat reda 5
